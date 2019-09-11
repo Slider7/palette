@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="RSSchool 2019Q1 stage#2 Code Jam 'DOM, DOM Events'">
+    <meta name="author" content="Kemalkhan Shlembayev">
+    <title>CodeJam-dom Palette</title>
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<!--my CSS-->
+		<link href="./assets/fonts/fontawesome-free-5.8.1-web/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1 class='text-center'>CodeJam-dom Palette</h1>
+    <article class = 'container d-flex'>
+			<section class="left-side d-flex flex-column">
+				<div class='palette'>
+					<ul class="nav flex-column bg-light">
+						<li class="nav-item">
+							<a id="bucket" href="#"><i class="fas fa-fill-drip"></i> Paint bucket (Alt+P)</a>
+						</li>
+						<li class="nav-item">
+							<a id="eyedropper" href="#"><i class="fas fa-eye-dropper"></i> Choose color (Alt+C)</a>
+						</li>
+						<li class="nav-item">
+							<a id="mover" href="#"><i class="fas fa-arrows-alt"></i> Move (Alt+M)</a>
+						</li>
+						<li class="nav-item">
+							<a id="transformer" href="#"><i class="fas fa-exchange-alt"></i> Transform (Alt+T)</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class='colors disabledMouse'>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<i id='curr-color-icon' class="fa fa-circle"></i> Current color
+						</li>
+						<li class="nav-item">
+							<i id='prev-color-icon' class="fa fa-circle"></i> Prev color
+						</li>
+						<li class="nav-item">
+							<i id='red-color-icon' class="fa fa-circle"></i> Red
+						</li>
+						<li class="nav-item">
+							<i id='blue-color-icon' class="fa fa-circle"></i> Blue
+						</li>
+						<li class="nav-item custom-selector">
+							<input type="color" name="color" id='color-picker' value="#f19055">
+							<label for='color-picker' class="color-label">Custom color</label>
+						</li>
+					</ul>	
+				</div>
+			</section>
+
+      <section class='right-side'>
+				<div class="canvas">
+					<div class="cell draggable" draggable="false" id='cell1'></div>
+					<div class="cell draggable" draggable="false" id='cell2'></div>
+					<div class="cell draggable" draggable="false" id='cell3'></div>
+					<div class="cell draggable" draggable="false" id='cell4'></div>
+					<div class="cell draggable" draggable="false" id='cell5'></div>
+					<div class="cell draggable" draggable="false" id='cell6'></div>
+					<div class="cell draggable" draggable="false" id='cell7'></div>
+					<div class="cell draggable" draggable="false" id='cell8'></div>
+					<div class="cell draggable" draggable="false" id='cell9'></div>
+				</div>
+			</section>
+			
+    </article>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+		<script src="./js/main.js"></script>
+  </body>
+</html>
